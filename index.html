@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Song Bird</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="top-panel">
+                <div class="logo"></div>
+                <div class="scorE">
+                    <span class="score">Score:</span>
+                </div>
+            </div>
+
+            <ul class="birds_row">
+                <li class="bird_item active">
+                    <a class="bird_link">link 1</a>
+                </li>
+                <li class="bird_item">
+                    <a class="bird_link">2222222</a>
+                </li>
+                <li class="bird_item">
+                    <a class="bird_link">233333333</a>
+                </li>
+                <li class="bird_item">
+                    <a class="bird_link">22233</a>
+                </li>
+                <li class="bird_item">
+                    <a class="bird_link">256543</a>
+                </li>
+                <li class="bird_item ">
+                    <a class="bird_link">263829</a>
+                </li>
+            </ul>
+        </header>
+
+        <div class="random_bird rounded circle">
+            <img class="bird-image" src="/assets/bird.jpg" alt="bird">
+            <div>
+                <ul class="listOfInfo">
+                    <li class="listOfInfo_item">
+                        <h3 class="nameOfBird">*****</h3>
+                    </li>
+                    <li class="listOfInfo_item">
+                        <div class="audio-player">
+                            <div class="wrapper">
+
+                                <div class="slider-container">
+                                    <div class="play play-icon"></div>
+                                    <div class="current-time">00:00</div>
+                                    <input type="range" min="1" max="100" value="0" class="seek-slider">
+                                    <div class="total-duration">00:00</div>
+                                </div>
+                                <div class="slider-container">
+                                    <input type="range" min="1" max="100" value="50" class="volume-slider">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="rowBirds mb">
+            <div class="columnBirds">
+                <ul class="item_list list-group">
+                    <li class="list-group-item">
+                        <span class="li-btn"></span>
+                        111
+                    </li>
+                    <li class="list-group-item">
+                        <span class="li-btn"></span>
+                        2222
+                    </li>
+                    <li class="list-group-item">
+                        <span class="li-btn"></span>
+                        33333
+                    </li>
+                    <li class="list-group-item">
+                        <span class="li-btn"></span>
+                        454444
+                    </li>
+                    <li class="list-group-item">
+                        <span class="li-btn"></span>
+                        6666666
+                    </li>
+                    <li class="list-group-item">
+                        <span class="li-btn"></span>
+                        77777777
+                    </li>
+                </ul>
+            </div>
+            <div class="columnBirds nb">
+                <div class="bird-details card">
+                    <p class="instructions" style="display:block;">
+                        <span>Прослушайте плеер.</span>
+                        <span>Выберите птицу из списка.</span>
+                    </p>
+
+                    <div class="card-body" style="display:none;">
+                        <img class="bird-image" src="/assets/bird.jpg">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-itemm">
+                                <h4>0</h4>
+                            </li>
+                            <li class="list-group-itemm">
+                                <span>0</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="bird-description">
+                    </span>
+                </div>
+            </div>
+            <button class="btn">Next Level</button>
+        </div>
+        <div class="end" style="display:none;">
+            <div class="last_page wrap">
+                <div class="win_words">
+                    <span>Вы прошли игру! Ваше результат:</span>
+                </div>
+            </div>
+            <a href="index.html"><button class="btn1">Играть снова</button></a>
+        </div>
+    </div>
+    <script type="module" defer src="/script/game.js"></script>
+</body>
+
+</html>
